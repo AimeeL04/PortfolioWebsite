@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio Website</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<!--Navigation Menu-->
+		<nav class="site-nav">
+			<ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="MyWork.html">My Work</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!--Main Content-->
+	<main>
+		<!--Hero-->
+		<section class="hero">
+			<div class="hero-content">
+			<h2>My Work</h2>
+			</div>
+			<!-- div class="poster">
+				<!--img src="images/me" -->
+		</section>
+		
+		<!--Intro-->
+		<section class="intro">
+		<p>Here are a few of my best work I have created or just added color to it.</p>
+		</section>	
+	</main>
+	<!--Images used to open the lightbox-->
+	<div class="row">
+		<div class="column">
+			<img src="Images/Kayaks.jpg" onClick="openModal();currentSlide(1)" class="hover-shadow" alt="kayaks">
+		</div>
+		<div class="column">
+			<img src="Images/Manequin.jpg" onClick="openModal();currentSlide(2)" class="hover-shadow" alt="mannequin">
+		</div>
+		<div class="column">
+			<img src="Images/Zoo.jpg" onClick="openModal();currentSlide(3)" class="hover-shadow" alt="zoo invitation card">
+		</div>
+		<div class="column">
+			<img src="Images/CarAd.jpg" onClick="openModal();currentSlide(4)" class="hover-shadow" alt="car ad">
+		</div>
+	</div>
+	<!--The Modal/Lightbox-->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onClick="closeModal()">&times;</span>
+		<div class="modal-content">
+			<div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="Images/Kayaks.jpg" style="width: 100%" alt="kayaks">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="Images/Manequin.jpg" style="width: 100%" alt="Mannequin">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="Images/Zoo.jpg" style="width: 100%" alt="Zoo Invitation Card">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="Images/CarAd.jpg" style="width: 100%" alt="Car Ad">
+			</div>
+		</div>
+	</div>
+	<!--Next/Previous controls-->
+	<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onClick="plusSlides(1)">&#10095;</a>
+	<!--Caption Text-->
+	<div class="caption-container">
+		<p id="caption"></p>
+	</div>
+	<!--Thumbnail Image Controls-->
+	<div class="column">
+		<img class="demo" src="Images/Kayaks.jpg" onClick="currentSlide(1)" alt="Kayaks">
+	</div>
+	<div class="column">
+		<img class="demo" src="Images/Manequin.jpg" onClick="currentSlide(2)" alt="Mannequin">
+	</div>
+	<div class="column">
+		<img class="demo" src="Images/Zoo.jpg" onClick="currentSlide(3)" alt="Zoo invitation card">
+	</div>
+	<div class="column">
+		<img class="demo" src="Images/CarAd.jpg" onClick="currentSlide(4)" alt="car ad">
+	</div>
+	</body>
+</html>
